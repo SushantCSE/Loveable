@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    background-color: #000000;
+}
+
+.header-left {
+    padding: 10px 20px;
+}
+
+.header-left svg {
+    width: 150px;
+    height: auto;
+    color: #ffffff;
+    cursor: pointer;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px;
+}
