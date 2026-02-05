@@ -4,24 +4,125 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+}
 .header {
     display: flex;
-    background-color: #000000;
+    background-color: #141414;
+    justify-content: space-between;
+    padding : 8px 20px;
+    position: fixed;
 }
 
 .header-left {
     padding: 10px 20px;
+    display: flex;
+}
+
+.header-left p {
+    color: #ffffff;
+    font-size: 14px;
+    margin-right: 20px;
+    cursor: pointer;
+    flex-direction: row;
+}
+
+.header-left a {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 20px;
+}
+
+nav p:hover {
+    color: #9b9b9b;
+    transition: 0.1s ease;
+}
+
+nav a:hover {
+    color: #9b9b9b;
+    transition: 0.1s ease;
+}
+
+.resources-option {
+    position: absolute;
+    background-color: #000000;
+    display: none;
+    height: 120px;
+    width: 250px;
+    top: 45px;
+    left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.resources-contener{
+    position: relative;
+}
+
+.resources-contener:hover .resources-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.resources-contener:hover p i {
+    transform: rotate(180deg);
+    transition: 0.3s ease;
 }
 
 .header-left svg {
-    width: 150px;
+    width: 145px;
     height: auto;
     color: #ffffff;
     cursor: pointer;
+    padding-left: 20px;
 }
 .header-right{
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    gap: 20px;
+    gap: 10px;
+    margin-right: 30px;
+}
+
+.header-right a {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.header-right a:hover {
+    background-color: #575757;
+    transition: 0.3s ease;
+}
+
+.header-right button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-section img {
+    width: 100%;
+    position: absolute;
+    background-color: #141414;
+    z-index: -999;
+    top: 150px;
+    scale: 2;
 }
